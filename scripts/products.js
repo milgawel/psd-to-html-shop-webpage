@@ -83,7 +83,7 @@ var data = [];
 var addproducts = function addproducts(input) {
   var productsNumber =
     arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 4;
-  console.log(input);
+
   itemsNumber.textContent = "".concat(input.length);
   productsArray.innerHTML = "";
   input.slice(0, productsNumber).map(function(item) {
