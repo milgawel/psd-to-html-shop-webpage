@@ -90,7 +90,7 @@ var addproducts = function addproducts(input) {
     productsArray.innerHTML += '\n    <div class="products__card" id="'
       .concat(
         item.id,
-        '">\n    <div class="mainInfo">\n      <p class="card__amount">\n        <img src="/assets/cart.png" alt="" /> <span>'
+        '">\n    <div class="mainInfo">\n      <p class="card__amount">\n        <img src="./assets/cart.png" alt="" /> <span>'
       )
       .concat(
         item.availability.name,
