@@ -1,0 +1,286 @@
+section.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  div.products__card {
+    flex-grow: 1;
+    position: relative;
+    border: 1px solid lightgrey;
+    height: 460px;
+    min-width: 300px;
+    max-width: 340px;
+    margin: 15px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div.mainInfo {
+      p.card__amount {
+        position: relative;
+        display: flex;
+
+        img {
+          position: relative;
+          margin-right: 10px;
+          top: 20%;
+          width: 18px;
+          height: 18px;
+        }
+
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 48%;
+        height: 40px;
+        line-height: 38px;
+      }
+
+      p.card__discount {
+        border: 1px solid red;
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: -1px;
+        right: -1px;
+        width: 52%;
+        min-width: 100px;
+        height: 40px;
+        color: #ff0000;
+        font-family: "Gotham";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 38px;
+
+        span {
+          margin-left: 4px;
+          font-weight: 700;
+          font-family: "Gotham";
+        }
+      }
+    }
+
+    div.card__description {
+      padding: 15px 15px;
+      position: relative;
+      min-height: 100px;
+
+      div.card__prices {
+        display: flex;
+        flex-direction: row;
+        height: 24px;
+
+        p.card__newPrice {
+          min-width: 60px;
+          height: 24px;
+          color: #ff0000;
+          font-family: "Gotham";
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          margin-right: 6px;
+        }
+        p.card__oldPrice {
+          transform: translateY(3px);
+          width: 80px;
+          height: 20px;
+          color: #1a171b;
+          font-family: "Gotham";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-decoration: line-through;
+        }
+      }
+      p.card__description {
+        min-height: 19px;
+        color: #000000;
+        font-family: "Gotham";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      p.card__brand {
+        height: 21px;
+        font-family: "Gotham";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #9f9f9f;
+      }
+    }
+  }
+  &:after {
+    content: "";
+    width: 32%;
+  }
+}
+
+// ************  MEDIA QUERRIES  **************
+
+@media (max-width: 1250px) {
+  section.products {
+    div.products__card {
+      min-width: 280px;
+      max-width: 32%;
+      margin-right: 2px;
+      margin-left: 2px;
+
+      div.mainInfo {
+        display: flex;
+        flex-direction: column-reverse;
+        max-height: 200px;
+
+        p.card__amount {
+          margin-top: 5px;
+          width: 100%;
+          width: 100%;
+          font-size: 13px;
+        }
+
+        p.card__discount {
+          border: 1px solid red;
+          display: block;
+          position: static;
+
+          width: 100%;
+          min-width: 100px;
+          height: 40px;
+
+          font-size: 13px;
+        }
+      }
+
+      img.card__img {
+        width: 100%;
+      }
+
+      div.card__description {
+        padding: 5px 5px;
+        position: relative;
+        min-height: 60px;
+
+        div.card__prices {
+          p.card__newPrice {
+            font-size: 14px;
+
+            margin-right: 3px;
+          }
+          p.card__oldPrice {
+            max-width: 80px;
+
+            font-size: 12px;
+          }
+        }
+        p.card__description {
+          min-height: 19px;
+          color: #000000;
+          font-family: "Gotham";
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19px;
+        }
+
+        p.card__brand {
+          height: 21px;
+          font-family: "Gotham";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 19px;
+          color: #9f9f9f;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  section.products {
+    div.products__card {
+      max-height: 360px;
+      min-width: 120px;
+      max-width: 48%;
+      height: 360px;
+      margin-right: 2px;
+      margin-left: 2px;
+
+      div.mainInfo {
+        display: flex;
+        flex-direction: column-reverse;
+        max-height: 200px;
+
+        p.card__amount {
+          margin-top: 5px;
+
+          width: 100%;
+
+          width: 100%;
+
+          font-size: 13px;
+        }
+
+        p.card__discount {
+          border: 1px solid red;
+          display: block;
+          position: static;
+          display: flex;
+
+          width: 100%;
+          min-width: 100px;
+          height: 40px;
+
+          font-size: 13px;
+        }
+      }
+
+      img.card__img {
+        max-height: 47%;
+        object-fit: contain;
+      }
+
+      div.card__description {
+        padding: 5px 5px;
+        position: relative;
+        min-height: 60px;
+
+        div.card__prices {
+          p.card__newPrice {
+            font-size: 14px;
+
+            margin-right: 3px;
+          }
+          p.card__oldPrice {
+            max-width: 80px;
+
+            font-size: 12px;
+          }
+        }
+        p.card__description {
+          min-height: 19px;
+          color: #000000;
+          font-family: "Gotham";
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19px;
+        }
+
+        p.card__brand {
+          height: 21px;
+          font-family: "Gotham";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 19px;
+          color: #9f9f9f;
+        }
+      }
+    }
+  }
+}
