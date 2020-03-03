@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body class="shop">
-    <section class="wrapper">
+    <div class="wrapper">
       <!-- Promo banner -->
       <section class="banner">
         <img src="./assets/27-layers.png" alt="" class="banner__img" />
-
-        <div class="banner__info">
-          <p class="info__text">
-            <img src="./assets/stoper.png" alt="" class="info__stopwatchIcon" />
-            Produkty na godzinę <strong>10:00</strong>
-          </p>
-          <p class="info__text info__description">
-            <img src="./assets/alert.png" alt="" class="info__alertIcon" />
-            Akcja "gorący Czwartek nie łączy się z innymi promocjami"
-          </p>
-        </div>
       </section>
+
+      <!-- Promo info -->
+      <section class="promo__info">
+        <p class="info__text">
+          <img src="./assets/stoper.png" alt="" class="info__stopwatchIcon" />
+          Produkty na godzine <strong>10:00</strong>
+        </p>
+        <p class="info__text info__description">
+          <img src="./assets/alert.png" alt="" class="info__alertIcon" />
+          Akcja "Gorący Czwartek" nie łączy się z innymi promocjami
+        </p>
+      </section>
+
       <!-- products menu -->
+
       <div class="products__viewOption__input">
         <p class="input__text">
           Ilość na stronie
@@ -36,10 +39,11 @@
           z <span class="input__number" id="input__number"></span>
         </p>
       </div>
+
       <!-- Products  -->
 
       <section class="products" id="products"></section>
-    </section>
+    </div>
     <script src="./scripts/products.js"></script>
   </body>
 </html>
