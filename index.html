@@ -10,15 +10,38 @@
   <body class="shop">
     <div class="wrapper">
       <!-- Promo banner -->
-      <section class="banner">
-        <img src="./assets/27-layers.png" alt="" class="banner__img" />
-      </section>
+      <header class="banner">
+        <img
+          src="./assets/bez ramki.png"
+          alt="baner_reklamowy_nowej_promocji"
+          class="banner__img"
+        />
+        <div class="banner__stopwatch">
+          <p class="stopwatch__title">
+            do końca pozostało
+          </p>
+
+          <h2 class="stopwatch__container">
+            <span class="stopwatch__container__time" id="d"></span>:
+            <span class="stopwatch__container__time" id="h"></span>:
+            <span class="stopwatch__container__time" id="m"></span>:
+            <span class="stopwatch__container__time" id="s"></span>
+          </h2>
+
+          <div class="stopwatch__timeIndex">
+            <p class="timeIndex__singleIndex">Dni</p>
+            <p class="timeIndex__singleIndex">godz</p>
+            <p class="timeIndex__singleIndex">min</p>
+            <p class="timeIndex__singleIndex">sek</p>
+          </div>
+        </div>
+      </header>
 
       <!-- Promo info -->
       <section class="promo__info">
         <p class="info__text">
           <img src="./assets/stoper.png" alt="" class="info__stopwatchIcon" />
-          Produkty na godzine <strong>10:00</strong>
+          Produkty na godzine <strong id="promo__hour"></strong>
         </p>
         <p class="info__text info__description">
           <img src="./assets/alert.png" alt="" class="info__alertIcon" />
@@ -44,6 +67,7 @@
 
       <section class="products" id="products"></section>
     </div>
+    <script src="./scripts/script.js"></script>
     <script src="./scripts/products.js"></script>
   </body>
 </html>

@@ -1,10 +1,82 @@
-section.banner {
+header.banner {
   margin-top: 100px;
+  position: relative;
 
   background-color: white;
   img.banner__img {
     width: 100%;
   }
-}
+  div.banner__stopwatch {
+    color: white;
+    position: absolute;
+    width: 28%;
+    height: 60%;
+    top: 17%;
+    right: 5%;
+    border: 1.5px solid white;
 
-// MEDAIAIDSAIDIAS
+    p.stopwatch__title {
+      text-transform: uppercase;
+      width: 100%;
+      font-weight: 300;
+      font-size: 1vw;
+      display: flex;
+      justify-content: center;
+      margin-top: 6%;
+
+      @media (min-width: 1500px) {
+        font-size: 15px;
+      }
+    }
+
+    h2.stopwatch__container {
+      width: 90%;
+      margin: 1% auto;
+      font-weight: 300;
+      font-size: 3vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 4%;
+      padding-left: 4%;
+      @media (min-width: 1500px) {
+        font-size: 45px;
+      }
+
+      span.stopwatch__container__time {
+        font-weight: 500;
+        width: 22%;
+        display: flex;
+        justify-content: center;
+      }
+      span.stopwatch__container__time:nth-child(1) {
+        width: 15%;
+      }
+      span.stopwatch__container__time:nth-child(4) {
+        width: 18%;
+        justify-content: flex-start;
+      }
+    }
+  }
+  div.stopwatch__timeIndex {
+    margin: 0 9% 0 12%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    @media (min-width: 1500px) {
+      font-size: 20px;
+    }
+
+    p.timeIndex__singleIndex:nth-child(2) {
+      margin-right: 5%;
+    }
+
+    p.timeIndex__singleIndex:nth-child(3) {
+      margin-right: 5%;
+    }
+  }
+}

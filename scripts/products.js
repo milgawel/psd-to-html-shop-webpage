@@ -66,7 +66,6 @@
 // };
 
 // productsSelectNumber.addEventListener("change", e => {
-//   console.log(e.target.value);
 //   addproducts(data[0].list, e.target.value);
 // });
 
@@ -137,7 +136,6 @@ var fetchData = function fetchData() {
 };
 
 productsSelectNumber.addEventListener("change", function(e) {
-  console.log(e.target.value);
   addproducts(data[0].list, e.target.value);
 });
 fetchData();
