@@ -36,7 +36,7 @@
 //       <p class="card__name">
 //         ${item.name}
 //       </p>
-//       <p class="card__brand">${item.producer.name} zł</p>
+//       <p class="card__brand">${item.producer.name} </p>
 //     </div>
 //   </div>
 //     `;
@@ -111,7 +111,7 @@ var addproducts = function addproducts(input) {
         ' z\u0142</p>\n      </div>\n      <p class="card__name">\n        '
       )
       .concat(item.name, '\n      </p>\n      <p class="card__brand">')
-      .concat(item.producer.name, " z\u0142</p>\n    </div>\n  </div>\n    ");
+      .concat(item.producer.name, "     </div>\n  </div>\n    ");
   });
 };
 

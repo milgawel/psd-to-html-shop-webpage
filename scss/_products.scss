@@ -15,7 +15,6 @@ section.promo__info {
     line-height: 32px;
     text-transform: uppercase;
     &.info__description {
-      font-family: "Gotham";
       font-size: 14px;
       font-weight: 500;
       line-height: 38px;
@@ -144,15 +143,14 @@ section.products {
         min-width: 100px;
         height: 40px;
         color: #ff0000;
-        font-family: "Gotham";
+
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 38px;
 
         span {
           margin-left: 4px;
           font-weight: 700;
-          font-family: "Gotham";
         }
       }
     }
@@ -171,7 +169,7 @@ section.products {
           min-width: 60px;
           height: 24px;
           color: #ff0000;
-          font-family: "Gotham";
+
           font-size: 20px;
           font-weight: 700;
           line-height: 24px;
@@ -182,7 +180,7 @@ section.products {
           width: 80px;
           height: 20px;
           color: #1a171b;
-          font-family: "Gotham";
+
           font-size: 14px;
           font-weight: 400;
           line-height: 20px;
@@ -192,7 +190,7 @@ section.products {
       p.card__name {
         min-height: 19px;
         color: #000000;
-        font-family: "Gotham";
+
         font-size: 13px;
         font-weight: 400;
         line-height: 19px;
@@ -203,7 +201,7 @@ section.products {
 
       p.card__brand {
         height: 21px;
-        font-family: "Gotham";
+
         font-size: 13px;
         font-weight: 400;
         line-height: 19px;
@@ -275,7 +273,7 @@ section.products {
         p.card__name {
           min-height: 19px;
           color: #000000;
-          font-family: "Gotham";
+
           font-size: 13px;
           font-weight: 400;
           line-height: 19px;
@@ -283,7 +281,7 @@ section.products {
 
         p.card__brand {
           height: 21px;
-          font-family: "Gotham";
+
           font-size: 12px;
           font-weight: 400;
           line-height: 19px;
@@ -344,7 +342,7 @@ section.products {
         p.card__name {
           min-height: 19px;
           color: #000000;
-          font-family: "Gotham";
+
           font-size: 13px;
           font-weight: 400;
           line-height: 19px;
@@ -352,7 +350,7 @@ section.products {
 
         p.card__brand {
           height: 21px;
-          font-family: "Gotham";
+
           font-size: 12px;
           font-weight: 400;
           line-height: 19px;
