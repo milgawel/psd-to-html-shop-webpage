@@ -93,13 +93,14 @@ section.products {
   flex-wrap: wrap;
   margin-bottom: 50px;
 
+  // ie11 flex-grow fix
+  _:-ms-fullscreen,
+  .products__card {
+    flex-grow: 0 !important;
+  }
+
   div.products__card {
     flex-grow: 1;
-    // ie11 flex-grow fix
-    _:-ms-fullscreen,
-    .products__card {
-      flex-grow: 0 !important;
-    }
 
     position: relative;
     border: 1px solid lightgrey;
